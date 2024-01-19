@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
+
+// reset CSS
+// CSS Selector
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.movie {
+    position: relative;
+
+    .header {
+        padding: 15px 30px;
+        background-color: #222;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .logo {
+            color: #e50914 !important;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        z-index: 100;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        // filter: blur(25px);
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+        width: 900px;
+
+        h2 {
+            font-family: "Rubik Lines";
+            font-size: 50px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: #fff;
+            letter-spacing: 1px;
+            font-family: "Diphylleia", serif;
+        }
+
+        button {
+            background-color: #fff;
+            padding: 10px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+
+            i {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .modal {
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 70px;
+            right: 50px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            i {
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+    }
+
+}
